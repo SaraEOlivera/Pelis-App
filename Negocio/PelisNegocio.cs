@@ -8,7 +8,7 @@ using Dominio;
 
 namespace Negocio
 {
-    internal class PelisNegocio
+    public class PelisNegocio
     {
         public List<Pelicula> listar() 
         {
@@ -31,7 +31,7 @@ namespace Negocio
                     Pelicula auxiliar = new Pelicula();
                     auxiliar.Titulo = (string)lector["Titulo"];
                     auxiliar.Bio = (string)lector["Bio"];
-                    auxiliar.Duracion = (int)lector["MinutosDuracion"];
+                    auxiliar.Duracion = (int)lector["Duracion"];
 
                     listaPelis.Add(auxiliar);
                 }

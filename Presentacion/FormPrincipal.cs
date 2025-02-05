@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Negocio;
+
 
 namespace Presentacion
 {
@@ -19,7 +22,8 @@ namespace Presentacion
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            //dgvPeliculas
+            PelisNegocio negocio = new PelisNegocio();
+            dgvPeliculas.DataSource = negocio.listar();
         }
     }
 }
