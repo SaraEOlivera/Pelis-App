@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categorias.cs" />
+    <Compile Include="Media.cs" />
     <Compile Include="Pelicula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

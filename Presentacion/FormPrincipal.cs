@@ -24,6 +24,15 @@ namespace Presentacion
         {
             PelisNegocio negocio = new PelisNegocio();
             dgvPeliculas.DataSource = negocio.listar();
+            ocultarColumnas();
+        }
+
+        public void ocultarColumnas()
+        {
+            dgvPeliculas.Columns["Bio"].Visible = false;
+            dgvPeliculas.Columns["Duracion"].Visible = false;
+
+
         }
     }
 }

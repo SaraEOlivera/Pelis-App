@@ -13,8 +13,7 @@ namespace Dominio
         public string Bio { get; set; }
         public DateTime FechaEstreno { get; set; }
         public int Duracion { get; set; }
-
-
-
+        public Media Media { get; set; }
+        public Categorias Categorias { get; set; }
     }
 }

@@ -21,7 +21,8 @@ namespace Negocio
             {
                 conexion.ConnectionString = "server = .\\SQLEXPRESS; database = MaxiFlix_DB; Integrated Security = true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "Select Titulo, Bio, MinutosDuracion as Duracion from Peliculas";
+                //Cambio la consulta -incluiye + tablas
+                comando.CommandText = "Select P.Titulo, P.FechaEstreno, STRING_AGG(C.Descripcion, ', ') as 'Genero', MIN(M.MediaURL) as 'Imagen' from Peliculas P inner join [Peliculas.Categorias] PC on P.Id = PC.IdPelicula inner join Categorias C on PC.IdCategoria = C.Id left join Media M on P.Id = M.IdPelicula Group By  P.Titulo, P.FechaEstreno";
                 comando.Connection = conexion;
                 conexion.Open();
                 lector = comando.ExecuteReader();
@@ -30,8 +31,15 @@ namespace Negocio
                 {
                     Pelicula auxiliar = new Pelicula();
                     auxiliar.Titulo = (string)lector["Titulo"];
-                    auxiliar.Bio = (string)lector["Bio"];
-                    auxiliar.Duracion = (int)lector["Duracion"];
+                    auxiliar.FechaEstreno = (DateTime)lector["FechaEstreno"];
+
+                    auxiliar.Media = new Media();
+                    auxiliar.Media.MediaURL = (string)lector["Imagen"];
+
+                    auxiliar.Categorias = new Categorias();
+                    auxiliar.Categorias.Descripcion = (string)lector["Genero"];
+                 
+
 
                     listaPelis.Add(auxiliar);
                 }
