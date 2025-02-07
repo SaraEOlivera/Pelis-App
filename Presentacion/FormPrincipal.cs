@@ -58,5 +58,7 @@ namespace Presentacion
                 pbxImagenPelis.Load("https://media.istockphoto.com/id/2170017549/vector/curved-film-strip-icon-empty-frame-design-black-border-vector-cinematic-template-element.jpg?s=612x612&w=0&k=20&c=wywajhKcxUCwjjFElamrHf2wxSq-ThsnwVlI4-yhX1Y=");
             }
         }
+
+
     }
 }

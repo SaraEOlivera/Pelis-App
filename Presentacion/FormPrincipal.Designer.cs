@@ -36,18 +36,20 @@
             // 
             // dgvPeliculas
             // 
+            this.dgvPeliculas.AllowUserToResizeColumns = false;
+            this.dgvPeliculas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPeliculas.Location = new System.Drawing.Point(12, 53);
+            this.dgvPeliculas.Location = new System.Drawing.Point(2, 12);
             this.dgvPeliculas.Name = "dgvPeliculas";
-            this.dgvPeliculas.Size = new System.Drawing.Size(474, 150);
+            this.dgvPeliculas.Size = new System.Drawing.Size(628, 224);
             this.dgvPeliculas.TabIndex = 0;
             this.dgvPeliculas.SelectionChanged += new System.EventHandler(this.dgvPeliculas_SelectionChanged);
             // 
             // pbxImagenPelis
             // 
-            this.pbxImagenPelis.Location = new System.Drawing.Point(492, 53);
+            this.pbxImagenPelis.Location = new System.Drawing.Point(668, 12);
             this.pbxImagenPelis.Name = "pbxImagenPelis";
-            this.pbxImagenPelis.Size = new System.Drawing.Size(233, 150);
+            this.pbxImagenPelis.Size = new System.Drawing.Size(254, 224);
             this.pbxImagenPelis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxImagenPelis.TabIndex = 1;
             this.pbxImagenPelis.TabStop = false;
@@ -56,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 229);
+            this.ClientSize = new System.Drawing.Size(945, 261);
             this.Controls.Add(this.pbxImagenPelis);
             this.Controls.Add(this.dgvPeliculas);
             this.Name = "FormPrincipal";
