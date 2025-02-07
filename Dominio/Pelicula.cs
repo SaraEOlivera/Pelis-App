@@ -15,5 +15,6 @@ namespace Dominio
         public int Duracion { get; set; }
         public Media Media { get; set; }
         public Categorias Categorias { get; set; }
+        public Clasificaciones Clasificaciones { get; set; }
     }
 }
