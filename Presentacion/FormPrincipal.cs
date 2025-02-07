@@ -31,6 +31,8 @@ namespace Presentacion
         {
             dgvPeliculas.Columns["Bio"].Visible = false;
             dgvPeliculas.Columns["Duracion"].Visible = false;
+            dgvPeliculas.Columns["Media"].Visible = false;
+
 
 
         }
