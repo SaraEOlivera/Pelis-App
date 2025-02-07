@@ -10,9 +10,10 @@ namespace Negocio
 {
     public class PelisNegocio
     {
-        public List<Pelicula> listar() 
+        #region Listar
+        public List<Pelicula> listar()
         {
-            List<Pelicula>listaPelis = new List<Pelicula>();
+            List<Pelicula> listaPelis = new List<Pelicula>();
             SqlConnection conexion = new SqlConnection();
             SqlCommand comando = new SqlCommand();
             SqlDataReader lector;
@@ -41,8 +42,6 @@ namespace Negocio
 
                     auxiliar.Clasificaciones = new Clasificaciones();
                     auxiliar.Clasificaciones.Descripcion = (string)lector["Clasificacion"];
-                 
-
 
                     listaPelis.Add(auxiliar);
                 }
@@ -52,18 +51,11 @@ namespace Negocio
             {
                 throw ex;
             }
-            finally 
+            finally
             {
                 conexion.Close();
             }
-        }
-
-
-
-
-
-
-
-
+        } 
+        #endregion
     }
 }
