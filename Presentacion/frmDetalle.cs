@@ -35,7 +35,7 @@ namespace Presentacion
         {
             txtTituloDetalle.Text = seleccionada.Titulo;
             txtBioDetalle.Text = seleccionada.Bio;
-            //txtEstrenoDetalle.Text = seleccionada.FechaEstreno;
+            txtEstrenoDetalle.Text = seleccionada.FechaEstreno.HasValue ? seleccionada.FechaEstreno.Value.ToString("dd/MM/yyyy") : "Sin info sobre la fecha de estreno";
             txtDuracionDetalle.Text = seleccionada.Duracion.ToString();
             //txtRepartoDetalle.Text = seleccionada.Reparto.Descripcion;
             //txtPlataformasDetalle.Text = seleccionada.Plataformas.Descripcion;

@@ -47,7 +47,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(469, 264);
+            this.btnVolver.Location = new System.Drawing.Point(660, 264);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(267, 23);
             this.btnVolver.TabIndex = 0;
@@ -58,7 +58,7 @@
             // lblTituloDetalle
             // 
             this.lblTituloDetalle.AutoSize = true;
-            this.lblTituloDetalle.Location = new System.Drawing.Point(43, 20);
+            this.lblTituloDetalle.Location = new System.Drawing.Point(27, 24);
             this.lblTituloDetalle.Name = "lblTituloDetalle";
             this.lblTituloDetalle.Size = new System.Drawing.Size(35, 13);
             this.lblTituloDetalle.TabIndex = 1;
@@ -67,7 +67,7 @@
             // lblRepartoDetalle
             // 
             this.lblRepartoDetalle.AutoSize = true;
-            this.lblRepartoDetalle.Location = new System.Drawing.Point(43, 216);
+            this.lblRepartoDetalle.Location = new System.Drawing.Point(17, 220);
             this.lblRepartoDetalle.Name = "lblRepartoDetalle";
             this.lblRepartoDetalle.Size = new System.Drawing.Size(45, 13);
             this.lblRepartoDetalle.TabIndex = 2;
@@ -76,7 +76,7 @@
             // lblDuracionDetalle
             // 
             this.lblDuracionDetalle.AutoSize = true;
-            this.lblDuracionDetalle.Location = new System.Drawing.Point(35, 165);
+            this.lblDuracionDetalle.Location = new System.Drawing.Point(12, 169);
             this.lblDuracionDetalle.Name = "lblDuracionDetalle";
             this.lblDuracionDetalle.Size = new System.Drawing.Size(50, 13);
             this.lblDuracionDetalle.TabIndex = 3;
@@ -85,7 +85,7 @@
             // lblEstrenoDetalle
             // 
             this.lblEstrenoDetalle.AutoSize = true;
-            this.lblEstrenoDetalle.Location = new System.Drawing.Point(35, 113);
+            this.lblEstrenoDetalle.Location = new System.Drawing.Point(19, 117);
             this.lblEstrenoDetalle.Name = "lblEstrenoDetalle";
             this.lblEstrenoDetalle.Size = new System.Drawing.Size(43, 13);
             this.lblEstrenoDetalle.TabIndex = 4;
@@ -94,7 +94,7 @@
             // lblBioDetalle
             // 
             this.lblBioDetalle.AutoSize = true;
-            this.lblBioDetalle.Location = new System.Drawing.Point(54, 69);
+            this.lblBioDetalle.Location = new System.Drawing.Point(38, 73);
             this.lblBioDetalle.Name = "lblBioDetalle";
             this.lblBioDetalle.Size = new System.Drawing.Size(24, 13);
             this.lblBioDetalle.TabIndex = 5;
@@ -103,7 +103,7 @@
             // lblPlataformaDetalle
             // 
             this.lblPlataformaDetalle.AutoSize = true;
-            this.lblPlataformaDetalle.Location = new System.Drawing.Point(35, 264);
+            this.lblPlataformaDetalle.Location = new System.Drawing.Point(0, 268);
             this.lblPlataformaDetalle.Name = "lblPlataformaDetalle";
             this.lblPlataformaDetalle.Size = new System.Drawing.Size(62, 13);
             this.lblPlataformaDetalle.TabIndex = 6;
@@ -111,55 +111,55 @@
             // 
             // txtTituloDetalle
             // 
-            this.txtTituloDetalle.Location = new System.Drawing.Point(165, 20);
+            this.txtTituloDetalle.Location = new System.Drawing.Point(80, 20);
             this.txtTituloDetalle.Name = "txtTituloDetalle";
             this.txtTituloDetalle.ReadOnly = true;
-            this.txtTituloDetalle.Size = new System.Drawing.Size(259, 20);
+            this.txtTituloDetalle.Size = new System.Drawing.Size(564, 20);
             this.txtTituloDetalle.TabIndex = 7;
             // 
             // txtPlataformasDetalle
             // 
-            this.txtPlataformasDetalle.Location = new System.Drawing.Point(165, 264);
+            this.txtPlataformasDetalle.Location = new System.Drawing.Point(80, 264);
             this.txtPlataformasDetalle.Name = "txtPlataformasDetalle";
             this.txtPlataformasDetalle.ReadOnly = true;
-            this.txtPlataformasDetalle.Size = new System.Drawing.Size(259, 20);
+            this.txtPlataformasDetalle.Size = new System.Drawing.Size(564, 20);
             this.txtPlataformasDetalle.TabIndex = 8;
             // 
             // txtRepartoDetalle
             // 
-            this.txtRepartoDetalle.Location = new System.Drawing.Point(165, 216);
+            this.txtRepartoDetalle.Location = new System.Drawing.Point(80, 216);
             this.txtRepartoDetalle.Name = "txtRepartoDetalle";
             this.txtRepartoDetalle.ReadOnly = true;
-            this.txtRepartoDetalle.Size = new System.Drawing.Size(259, 20);
+            this.txtRepartoDetalle.Size = new System.Drawing.Size(564, 20);
             this.txtRepartoDetalle.TabIndex = 9;
             // 
             // txtDuracionDetalle
             // 
-            this.txtDuracionDetalle.Location = new System.Drawing.Point(165, 162);
+            this.txtDuracionDetalle.Location = new System.Drawing.Point(80, 162);
             this.txtDuracionDetalle.Name = "txtDuracionDetalle";
             this.txtDuracionDetalle.ReadOnly = true;
-            this.txtDuracionDetalle.Size = new System.Drawing.Size(259, 20);
+            this.txtDuracionDetalle.Size = new System.Drawing.Size(564, 20);
             this.txtDuracionDetalle.TabIndex = 10;
             // 
             // txtEstrenoDetalle
             // 
-            this.txtEstrenoDetalle.Location = new System.Drawing.Point(165, 110);
+            this.txtEstrenoDetalle.Location = new System.Drawing.Point(80, 110);
             this.txtEstrenoDetalle.Name = "txtEstrenoDetalle";
             this.txtEstrenoDetalle.ReadOnly = true;
-            this.txtEstrenoDetalle.Size = new System.Drawing.Size(259, 20);
+            this.txtEstrenoDetalle.Size = new System.Drawing.Size(564, 20);
             this.txtEstrenoDetalle.TabIndex = 11;
             // 
             // txtBioDetalle
             // 
-            this.txtBioDetalle.Location = new System.Drawing.Point(165, 69);
+            this.txtBioDetalle.Location = new System.Drawing.Point(80, 69);
             this.txtBioDetalle.Name = "txtBioDetalle";
             this.txtBioDetalle.ReadOnly = true;
-            this.txtBioDetalle.Size = new System.Drawing.Size(259, 20);
+            this.txtBioDetalle.Size = new System.Drawing.Size(564, 20);
             this.txtBioDetalle.TabIndex = 12;
             // 
             // pbxDetalle
             // 
-            this.pbxDetalle.Location = new System.Drawing.Point(469, 20);
+            this.pbxDetalle.Location = new System.Drawing.Point(660, 20);
             this.pbxDetalle.Name = "pbxDetalle";
             this.pbxDetalle.Size = new System.Drawing.Size(267, 233);
             this.pbxDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 312);
+            this.ClientSize = new System.Drawing.Size(939, 312);
             this.Controls.Add(this.pbxDetalle);
             this.Controls.Add(this.txtBioDetalle);
             this.Controls.Add(this.txtEstrenoDetalle);

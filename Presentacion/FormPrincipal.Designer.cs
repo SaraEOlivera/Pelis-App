@@ -67,7 +67,6 @@
             this.ClientSize = new System.Drawing.Size(945, 261);
             this.Controls.Add(this.pbxImagenPelis);
             this.Controls.Add(this.dgvPeliculas);
-            this.MaximumSize = new System.Drawing.Size(961, 300);
             this.MinimumSize = new System.Drawing.Size(961, 300);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
