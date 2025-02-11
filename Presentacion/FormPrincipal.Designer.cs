@@ -48,6 +48,8 @@
             // pbxImagenPelis
             // 
             this.pbxImagenPelis.Location = new System.Drawing.Point(668, 12);
+            this.pbxImagenPelis.MaximumSize = new System.Drawing.Size(254, 224);
+            this.pbxImagenPelis.MinimumSize = new System.Drawing.Size(254, 224);
             this.pbxImagenPelis.Name = "pbxImagenPelis";
             this.pbxImagenPelis.Size = new System.Drawing.Size(254, 224);
             this.pbxImagenPelis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,7 +63,10 @@
             this.ClientSize = new System.Drawing.Size(945, 261);
             this.Controls.Add(this.pbxImagenPelis);
             this.Controls.Add(this.dgvPeliculas);
+            this.MaximumSize = new System.Drawing.Size(961, 300);
+            this.MinimumSize = new System.Drawing.Size(961, 300);
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Peliculas";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).EndInit();
