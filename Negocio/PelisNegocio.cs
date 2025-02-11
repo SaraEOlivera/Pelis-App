@@ -20,7 +20,7 @@ namespace Negocio
 
             try
             {
-                conexion.ConnectionString = "server = .\\SQLEXPRESS; database = MaxiFlix_DB; Integrated Security = true";
+                conexion.ConnectionString = "server = .\\SQLEXPRESS; database = PelisApp_DB; Integrated Security = true";
                 comando.CommandType = System.Data.CommandType.Text;
                 //Cambio la consulta -incluiye + tablas
                 comando.CommandText = "Select P.Titulo, STRING_AGG(C.Descripcion, ', ') as 'Genero', Cl.Descripcion as 'Clasificacion', MIN(M.MediaURL) as 'Imagen', P.FechaEstreno from Peliculas P inner join [Peliculas.Categorias] PC on P.Id = PC.IdPelicula inner join Categorias C on PC.IdCategoria = C.Id inner join [Peliculas.Clasificaciones] PCl on P.Id = PCl.IdPelicula inner join Clasificaciones Cl on PCl.IdClasificacion = Cl.Id inner join Media M on P.Id = M.IdPelicula Group By  P.Titulo, P.FechaEstreno, Cl.Descripcion";

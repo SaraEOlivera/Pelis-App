@@ -18,7 +18,7 @@ namespace Negocio
         }
         public AccesoDatos() 
         {
-            conexion = new SqlConnection("server = .\\SQLEXPRESS; database = MaxiFlix_DB; Integrated Security = true");
+            conexion = new SqlConnection("server = .\\SQLEXPRESS; database = PelisApp_DB; Integrated Security = true");
             comando = new SqlCommand();
         }
 
