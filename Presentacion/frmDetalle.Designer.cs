@@ -162,6 +162,7 @@
             this.pbxDetalle.Location = new System.Drawing.Point(469, 20);
             this.pbxDetalle.Name = "pbxDetalle";
             this.pbxDetalle.Size = new System.Drawing.Size(267, 233);
+            this.pbxDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxDetalle.TabIndex = 13;
             this.pbxDetalle.TabStop = false;
             // 
@@ -187,6 +188,7 @@
             this.Name = "frmDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Información Detallada";
+            this.Load += new System.EventHandler(this.frmDetalle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetalle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

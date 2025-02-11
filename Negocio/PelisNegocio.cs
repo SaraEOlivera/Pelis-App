@@ -23,7 +23,7 @@ namespace Negocio
                 conexion.ConnectionString = "server = .\\SQLEXPRESS; database = PelisApp_DB; Integrated Security = true";
                 comando.CommandType = System.Data.CommandType.Text;
                 //Cambio la consulta -incluiye + tablas
-                comando.CommandText = "Select P.Titulo, STRING_AGG(C.Descripcion, ', ') as 'Genero', Cl.Descripcion as 'Clasificacion', MIN(M.MediaURL) as 'Imagen', P.FechaEstreno from Peliculas P inner join [Peliculas.Categorias] PC on P.Id = PC.IdPelicula inner join Categorias C on PC.IdCategoria = C.Id inner join [Peliculas.Clasificaciones] PCl on P.Id = PCl.IdPelicula inner join Clasificaciones Cl on PCl.IdClasificacion = Cl.Id inner join Media M on P.Id = M.IdPelicula Group By  P.Titulo, P.FechaEstreno, Cl.Descripcion";
+                comando.CommandText = "Select P.Titulo, P.Bio, STRING_AGG(C.Descripcion, ', ') as 'Genero',Cl.Descripcion as 'Clasificacion', MIN(M.MediaURL) as 'Imagen',P.FechaEstreno from Peliculas P inner join [Peliculas.Categorias] PC on P.Id = PC.IdPelicula inner join Categorias C on PC.IdCategoria = C.Id inner join [Peliculas.Clasificaciones] PCl on P.Id = PCl.IdPelicula inner join Clasificaciones Cl on PCl.IdClasificacion = Cl.Id inner join Media M on P.Id = M.IdPelicula Group By  P.Titulo, P.Bio, P.FechaEstreno, Cl.Descripcion";
                 comando.Connection = conexion;
                 conexion.Open();
                 lector = comando.ExecuteReader();
@@ -32,6 +32,7 @@ namespace Negocio
                 {
                     Pelicula auxiliar = new Pelicula();
                     auxiliar.Titulo = (string)lector["Titulo"];
+                    auxiliar.Bio = (string)lector["Bio"];
                     auxiliar.FechaEstreno = (DateTime)lector["FechaEstreno"];
 
                     auxiliar.Media = new Media();
