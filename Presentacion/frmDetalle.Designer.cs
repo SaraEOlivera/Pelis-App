@@ -185,6 +185,7 @@
             this.Controls.Add(this.lblTituloDetalle);
             this.Controls.Add(this.btnVolver);
             this.Name = "frmDetalle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Información Detallada";
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetalle)).EndInit();
             this.ResumeLayout(false);

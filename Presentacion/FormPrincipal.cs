@@ -59,9 +59,14 @@ namespace Presentacion
             }
         }
 
-        private void dgvPeliculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvPeliculas_CellDoubleClick(object sender, DataGridViewCellEventArgs evento)
         {
-
+            if (evento.RowIndex >= 0 ) 
+            {
+                Pelicula fila = (Pelicula)dgvPeliculas.CurrentRow.DataBoundItem;
+                frmDetalle vista = new frmDetalle(fila);
+                vista.ShowDialog();
+            }
         }
     }
 }

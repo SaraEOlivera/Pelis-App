@@ -46,7 +46,7 @@
             this.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPeliculas.Size = new System.Drawing.Size(628, 224);
             this.dgvPeliculas.TabIndex = 0;
-            this.dgvPeliculas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeliculas_CellContentClick);
+            this.dgvPeliculas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeliculas_CellDoubleClick);
             this.dgvPeliculas.SelectionChanged += new System.EventHandler(this.dgvPeliculas_SelectionChanged);
             // 
             // pbxImagenPelis
