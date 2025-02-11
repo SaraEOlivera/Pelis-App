@@ -39,10 +39,14 @@
             this.dgvPeliculas.AllowUserToResizeColumns = false;
             this.dgvPeliculas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPeliculas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvPeliculas.Location = new System.Drawing.Point(2, 12);
+            this.dgvPeliculas.MultiSelect = false;
             this.dgvPeliculas.Name = "dgvPeliculas";
+            this.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPeliculas.Size = new System.Drawing.Size(628, 224);
             this.dgvPeliculas.TabIndex = 0;
+            this.dgvPeliculas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeliculas_CellContentClick);
             this.dgvPeliculas.SelectionChanged += new System.EventHandler(this.dgvPeliculas_SelectionChanged);
             // 
             // pbxImagenPelis

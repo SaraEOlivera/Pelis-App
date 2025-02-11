@@ -59,6 +59,9 @@ namespace Presentacion
             }
         }
 
+        private void dgvPeliculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
