@@ -45,6 +45,7 @@
     <Compile Include="Clasificaciones.cs" />
     <Compile Include="Media.cs" />
     <Compile Include="Pelicula.cs" />
+    <Compile Include="Plataformas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

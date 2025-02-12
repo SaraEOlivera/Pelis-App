@@ -22,5 +22,7 @@ namespace Dominio
         public Categorias Categorias { get; set; }
         [DisplayName("Clasificación")]
         public Clasificaciones Clasificaciones { get; set; }
+        [DisplayName("Plataforma")]
+        public Plataformas Plataformas { get; set; }
     }
 }
