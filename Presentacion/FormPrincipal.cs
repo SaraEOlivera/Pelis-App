@@ -39,6 +39,7 @@ namespace Presentacion
             dgvPeliculas.Columns["Duracion"].Visible = false;
             dgvPeliculas.Columns["Media"].Visible = false;
             dgvPeliculas.Columns["Plataformas"].Visible = false;
+            dgvPeliculas.Columns["Reparto"].Visible = false;
         }
         #endregion
 

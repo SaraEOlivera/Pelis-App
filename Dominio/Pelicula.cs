@@ -24,5 +24,6 @@ namespace Dominio
         public Clasificaciones Clasificaciones { get; set; }
         [DisplayName("Plataforma")]
         public Plataformas Plataformas { get; set; }
+        public Reparto Reparto { get; set; }
     }
 }
