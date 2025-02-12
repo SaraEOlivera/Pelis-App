@@ -38,7 +38,7 @@ namespace Presentacion
             txtEstrenoDetalle.Text = seleccionada.FechaEstreno.HasValue ? seleccionada.FechaEstreno.Value.ToString("dd/MM/yyyy") : "Sin info sobre la fecha de estreno";
             txtDuracionDetalle.Text = seleccionada.Duracion.ToString();
             //txtRepartoDetalle.Text = seleccionada.Reparto.Descripcion;
-            //txtPlataformasDetalle.Text = seleccionada.Plataformas.Descripcion;
+            txtPlataformasDetalle.Text = seleccionada.Plataformas.Nombre;
             if (!string.IsNullOrEmpty(seleccionada.Media.MediaURL)) 
             {
                 try
