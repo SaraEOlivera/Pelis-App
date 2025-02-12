@@ -18,7 +18,7 @@ namespace Dominio
         public DateTime? FechaEstreno { get; set; }
         public int Duracion { get; set; }
         public Media Media { get; set; }
-        [DisplayName("Categoría")]
+        [DisplayName("Género")]
         public Categorias Categorias { get; set; }
         [DisplayName("Clasificación")]
         public Clasificaciones Clasificaciones { get; set; }

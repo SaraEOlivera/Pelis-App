@@ -42,12 +42,14 @@
             this.txtEstrenoDetalle = new System.Windows.Forms.TextBox();
             this.txtBioDetalle = new System.Windows.Forms.TextBox();
             this.pbxDetalle = new System.Windows.Forms.PictureBox();
+            this.lblGeneroDetalle = new System.Windows.Forms.Label();
+            this.txtGenerosDetalle = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetalle)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(660, 264);
+            this.btnVolver.Location = new System.Drawing.Point(660, 297);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(267, 23);
             this.btnVolver.TabIndex = 0;
@@ -67,7 +69,7 @@
             // lblRepartoDetalle
             // 
             this.lblRepartoDetalle.AutoSize = true;
-            this.lblRepartoDetalle.Location = new System.Drawing.Point(17, 220);
+            this.lblRepartoDetalle.Location = new System.Drawing.Point(17, 249);
             this.lblRepartoDetalle.Name = "lblRepartoDetalle";
             this.lblRepartoDetalle.Size = new System.Drawing.Size(45, 13);
             this.lblRepartoDetalle.TabIndex = 2;
@@ -76,7 +78,7 @@
             // lblDuracionDetalle
             // 
             this.lblDuracionDetalle.AutoSize = true;
-            this.lblDuracionDetalle.Location = new System.Drawing.Point(12, 169);
+            this.lblDuracionDetalle.Location = new System.Drawing.Point(12, 198);
             this.lblDuracionDetalle.Name = "lblDuracionDetalle";
             this.lblDuracionDetalle.Size = new System.Drawing.Size(50, 13);
             this.lblDuracionDetalle.TabIndex = 3;
@@ -85,7 +87,7 @@
             // lblEstrenoDetalle
             // 
             this.lblEstrenoDetalle.AutoSize = true;
-            this.lblEstrenoDetalle.Location = new System.Drawing.Point(19, 117);
+            this.lblEstrenoDetalle.Location = new System.Drawing.Point(19, 146);
             this.lblEstrenoDetalle.Name = "lblEstrenoDetalle";
             this.lblEstrenoDetalle.Size = new System.Drawing.Size(43, 13);
             this.lblEstrenoDetalle.TabIndex = 4;
@@ -94,7 +96,7 @@
             // lblBioDetalle
             // 
             this.lblBioDetalle.AutoSize = true;
-            this.lblBioDetalle.Location = new System.Drawing.Point(38, 73);
+            this.lblBioDetalle.Location = new System.Drawing.Point(38, 102);
             this.lblBioDetalle.Name = "lblBioDetalle";
             this.lblBioDetalle.Size = new System.Drawing.Size(24, 13);
             this.lblBioDetalle.TabIndex = 5;
@@ -103,7 +105,7 @@
             // lblPlataformaDetalle
             // 
             this.lblPlataformaDetalle.AutoSize = true;
-            this.lblPlataformaDetalle.Location = new System.Drawing.Point(0, 268);
+            this.lblPlataformaDetalle.Location = new System.Drawing.Point(0, 297);
             this.lblPlataformaDetalle.Name = "lblPlataformaDetalle";
             this.lblPlataformaDetalle.Size = new System.Drawing.Size(62, 13);
             this.lblPlataformaDetalle.TabIndex = 6;
@@ -119,7 +121,7 @@
             // 
             // txtPlataformasDetalle
             // 
-            this.txtPlataformasDetalle.Location = new System.Drawing.Point(80, 264);
+            this.txtPlataformasDetalle.Location = new System.Drawing.Point(80, 293);
             this.txtPlataformasDetalle.Name = "txtPlataformasDetalle";
             this.txtPlataformasDetalle.ReadOnly = true;
             this.txtPlataformasDetalle.Size = new System.Drawing.Size(564, 20);
@@ -127,7 +129,7 @@
             // 
             // txtRepartoDetalle
             // 
-            this.txtRepartoDetalle.Location = new System.Drawing.Point(80, 216);
+            this.txtRepartoDetalle.Location = new System.Drawing.Point(80, 245);
             this.txtRepartoDetalle.Name = "txtRepartoDetalle";
             this.txtRepartoDetalle.ReadOnly = true;
             this.txtRepartoDetalle.Size = new System.Drawing.Size(564, 20);
@@ -135,7 +137,7 @@
             // 
             // txtDuracionDetalle
             // 
-            this.txtDuracionDetalle.Location = new System.Drawing.Point(80, 162);
+            this.txtDuracionDetalle.Location = new System.Drawing.Point(80, 191);
             this.txtDuracionDetalle.Name = "txtDuracionDetalle";
             this.txtDuracionDetalle.ReadOnly = true;
             this.txtDuracionDetalle.Size = new System.Drawing.Size(564, 20);
@@ -143,7 +145,7 @@
             // 
             // txtEstrenoDetalle
             // 
-            this.txtEstrenoDetalle.Location = new System.Drawing.Point(80, 110);
+            this.txtEstrenoDetalle.Location = new System.Drawing.Point(80, 139);
             this.txtEstrenoDetalle.Name = "txtEstrenoDetalle";
             this.txtEstrenoDetalle.ReadOnly = true;
             this.txtEstrenoDetalle.Size = new System.Drawing.Size(564, 20);
@@ -151,7 +153,7 @@
             // 
             // txtBioDetalle
             // 
-            this.txtBioDetalle.Location = new System.Drawing.Point(80, 69);
+            this.txtBioDetalle.Location = new System.Drawing.Point(80, 98);
             this.txtBioDetalle.Name = "txtBioDetalle";
             this.txtBioDetalle.ReadOnly = true;
             this.txtBioDetalle.Size = new System.Drawing.Size(564, 20);
@@ -161,16 +163,35 @@
             // 
             this.pbxDetalle.Location = new System.Drawing.Point(660, 20);
             this.pbxDetalle.Name = "pbxDetalle";
-            this.pbxDetalle.Size = new System.Drawing.Size(267, 233);
+            this.pbxDetalle.Size = new System.Drawing.Size(267, 271);
             this.pbxDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxDetalle.TabIndex = 13;
             this.pbxDetalle.TabStop = false;
+            // 
+            // lblGeneroDetalle
+            // 
+            this.lblGeneroDetalle.AutoSize = true;
+            this.lblGeneroDetalle.Location = new System.Drawing.Point(26, 66);
+            this.lblGeneroDetalle.Name = "lblGeneroDetalle";
+            this.lblGeneroDetalle.Size = new System.Drawing.Size(47, 13);
+            this.lblGeneroDetalle.TabIndex = 14;
+            this.lblGeneroDetalle.Text = "Géneros";
+            // 
+            // txtGenerosDetalle
+            // 
+            this.txtGenerosDetalle.Location = new System.Drawing.Point(79, 63);
+            this.txtGenerosDetalle.Name = "txtGenerosDetalle";
+            this.txtGenerosDetalle.ReadOnly = true;
+            this.txtGenerosDetalle.Size = new System.Drawing.Size(564, 20);
+            this.txtGenerosDetalle.TabIndex = 15;
             // 
             // frmDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 312);
+            this.ClientSize = new System.Drawing.Size(949, 339);
+            this.Controls.Add(this.txtGenerosDetalle);
+            this.Controls.Add(this.lblGeneroDetalle);
             this.Controls.Add(this.pbxDetalle);
             this.Controls.Add(this.txtBioDetalle);
             this.Controls.Add(this.txtEstrenoDetalle);
@@ -211,5 +232,7 @@
         private System.Windows.Forms.TextBox txtEstrenoDetalle;
         private System.Windows.Forms.TextBox txtBioDetalle;
         private System.Windows.Forms.PictureBox pbxDetalle;
+        private System.Windows.Forms.Label lblGeneroDetalle;
+        private System.Windows.Forms.TextBox txtGenerosDetalle;
     }
 }

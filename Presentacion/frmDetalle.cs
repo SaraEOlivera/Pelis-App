@@ -34,6 +34,7 @@ namespace Presentacion
         private void frmDetalle_Load(object sender, EventArgs e)
         {
             txtTituloDetalle.Text = seleccionada.Titulo;
+            txtGenerosDetalle.Text = seleccionada.Categorias.Descripcion;
             txtBioDetalle.Text = seleccionada.Bio;
             txtEstrenoDetalle.Text = seleccionada.FechaEstreno.HasValue ? seleccionada.FechaEstreno.Value.ToString("dd/MM/yyyy") : "Sin info sobre la fecha de estreno";
             txtDuracionDetalle.Text = seleccionada.Duracion.ToString();
