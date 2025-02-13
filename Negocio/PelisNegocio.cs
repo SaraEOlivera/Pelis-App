@@ -34,11 +34,11 @@ namespace Negocio
     "inner join Categorias C on PC.IdCategoria = C.Id " +
     "Group By IdPelicula), " +
     "RepartosUnicos as (" +
-    "Select PR.IdPelicula, STRING_AGG(CONCAT(R.Nombre, R.Apellido), ', ') as Reparto " +
+    "Select PR.IdPelicula, STRING_AGG(CONCAT(R.Nombre, ' ' ,R.Apellido), ', ') as Reparto " +
     "from [Peliculas.Reparto] PR " +
     "inner join Reparto R on PR.IdReparto = R.Id " +
     "group by IdPelicula) " +
-    "Select P.Titulo, P.Bio, GU.Generos as 'Genero', " +
+    "Select P.Titulo, P.Bio, P.MinutosDuracion as 'Duracion', GU.Generos as 'Genero', " +
     "Cl.Descripcion as 'Clasificacion', MIN(M.MediaURL) as 'Imagen', " +
     "P.FechaEstreno, PU.Plataformas, RU.Reparto " +
     "From Peliculas P " +
@@ -48,7 +48,7 @@ namespace Negocio
     "inner join GenerosUnicos GU on P.Id = GU.IdPelicula " +
     "inner join PlataformasUnicas PU on P.Id = PU.IdPelicula " +
     "inner join RepartosUnicos RU on P.Id = RU.IdPelicula " +
-    "group by P.Titulo, P.Bio, P.FechaEstreno, Cl.Descripcion, PU.Plataformas, " +
+    "group by P.Titulo, P.Bio, P.MinutosDuracion, P.FechaEstreno, Cl.Descripcion, PU.Plataformas, " +
     "GU.Generos, RU.Reparto;";
 
                 comando.Connection = conexion;
@@ -60,6 +60,7 @@ namespace Negocio
                     Pelicula auxiliar = new Pelicula();
                     auxiliar.Titulo = (string)lector["Titulo"];
                     auxiliar.Bio = (string)lector["Bio"];
+                    auxiliar.Duracion = (int)lector["Duracion"];
                     auxiliar.FechaEstreno = (DateTime)lector["FechaEstreno"];
 
                     auxiliar.Media = new Media();
