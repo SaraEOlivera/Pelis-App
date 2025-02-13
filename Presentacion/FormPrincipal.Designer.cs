@@ -30,6 +30,7 @@
         {
             this.dgvPeliculas = new System.Windows.Forms.DataGridView();
             this.pbxImagenPelis = new System.Windows.Forms.PictureBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPelis)).BeginInit();
             this.SuspendLayout();
@@ -60,11 +61,22 @@
             this.pbxImagenPelis.TabIndex = 1;
             this.pbxImagenPelis.TabStop = false;
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Location = new System.Drawing.Point(2, 242);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(115, 23);
+            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.Text = "Agregar Película";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 261);
+            this.ClientSize = new System.Drawing.Size(945, 296);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.pbxImagenPelis);
             this.Controls.Add(this.dgvPeliculas);
             this.MinimumSize = new System.Drawing.Size(961, 300);
@@ -82,6 +94,7 @@
 
         private System.Windows.Forms.DataGridView dgvPeliculas;
         private System.Windows.Forms.PictureBox pbxImagenPelis;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }
 
