@@ -69,7 +69,9 @@
             this.btnAgregar.Size = new System.Drawing.Size(115, 23);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar Película";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // FormPrincipal
             // 

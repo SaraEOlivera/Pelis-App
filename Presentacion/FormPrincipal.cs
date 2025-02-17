@@ -70,5 +70,11 @@ namespace Presentacion
                 vista.ShowDialog();
             }
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmNuevaPelicula nuevaPelicula = new frmNuevaPelicula();
+            nuevaPelicula.ShowDialog();
+        }
     }
 }
