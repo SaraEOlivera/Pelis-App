@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dominio;
+using Negocio;
 
 namespace Presentacion
 {
@@ -31,6 +32,7 @@ namespace Presentacion
         private void btnAceptarNuevaPeli_Click(object sender, EventArgs e)
         {
             Pelicula nuevaPelicula = new Pelicula();
+            PelisNegocio negocio = new PelisNegocio();
             try
             {
                 nuevaPelicula.Titulo = txtTitulo.Text;

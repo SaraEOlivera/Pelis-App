@@ -92,7 +92,12 @@ namespace Negocio
             {
                 conexion.Close();
             }
-        } 
+        }
         #endregion
+
+
+        public void agregar() { }
+
+        public void modificar() { }
     }
 }
