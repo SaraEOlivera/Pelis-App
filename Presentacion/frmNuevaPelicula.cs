@@ -36,7 +36,8 @@ namespace Presentacion
             try
             {
                 nuevaPelicula.Titulo = txtTitulo.Text;
-                //nuevaPelicula.FechaEstreno = txtFechaEstreno.Text;
+                //convertir el textbox a datetime:
+                nuevaPelicula.FechaEstreno = DateTime.Parse(txtFechaEstreno.Text);
                 //nuevaPelicula.Media.MediaURL = txtImagenUrl.Text;
                 nuevaPelicula.Duracion = int.Parse(txtMinutoDuracion.Text);
                 nuevaPelicula.Bio = txtBio.Text;
@@ -51,5 +52,8 @@ namespace Presentacion
                 MessageBox.Show(ex.ToString());
             }
         }
+
+
+
     }
 }
