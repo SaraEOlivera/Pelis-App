@@ -53,7 +53,17 @@ namespace Negocio
             if (lector != null)
                 lector.Close();
             conexion.Close();
-        } 
+        }
+
+        internal void setearParametros()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void ejecutarAccion()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

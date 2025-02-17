@@ -41,6 +41,10 @@ namespace Presentacion
                 nuevaPelicula.Duracion = int.Parse(txtMinutoDuracion.Text);
                 nuevaPelicula.Bio = txtBio.Text;
 
+                negocio.agregar(nuevaPelicula);
+                MessageBox.Show("Película agregada");
+                Close();
+
             }
             catch (Exception ex)
             {

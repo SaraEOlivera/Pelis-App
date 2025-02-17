@@ -96,7 +96,19 @@ namespace Negocio
         #endregion
 
 
-        public void agregar() { }
+        public void agregar() 
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         public void modificar() { }
     }
