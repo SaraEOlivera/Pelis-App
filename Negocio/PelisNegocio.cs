@@ -109,13 +109,14 @@ namespace Negocio
                 datos.setearParametros("@bio", nueva.Bio);
                 datos.ejecutarAccion();
 
-
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw ex;
+            }
+            finally 
+            {
+                datos.cerrarConexion();
             }
         }
 
