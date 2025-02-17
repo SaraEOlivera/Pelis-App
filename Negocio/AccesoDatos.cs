@@ -47,7 +47,6 @@ namespace Negocio
         }
         #endregion
 
-        #region cerrarConexion
         public void cerrarConexion()
         {
             if (lector != null)
@@ -55,15 +54,14 @@ namespace Negocio
             conexion.Close();
         }
 
-        internal void setearParametros()
+        public void setearParametros(string nombre, object valor)
         {
-            throw new NotImplementedException();
+            comando.Parameters.AddWithValue(nombre, valor);
         }
 
-        internal void ejecutarAccion()
+        public void ejecutarAccion()
         {
-            throw new NotImplementedException();
+            comando.Connection = conexion;
         }
-        #endregion
     }
 }

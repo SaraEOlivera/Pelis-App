@@ -96,11 +96,20 @@ namespace Negocio
         #endregion
 
 
-        public void agregar() 
+        public void agregar(Pelicula nueva) 
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
+                // titulo estreno imagen duracion y bio
+                datos.setearConsulta("Insert into Peliculas(Titulo, FechaEstreno, MinutosDuracion, Bio) values(@titulo, @fechaEstreno, @minutosDuracion, @bio)");
+                datos.setearParametros("@titulo", nueva.Titulo);
+                datos.setearParametros("@fechaEstreno", nueva.FechaEstreno);
+                datos.setearParametros("@minutosDuracion", nueva.Duracion);
+                datos.setearParametros("@bio", nueva.Bio);
+                datos.ejecutarAccion();
+
+
 
             }
             catch (Exception)
